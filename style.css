@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    background-color: hsl(47, 88%, 63%);
+    text-align: left;
+    font-size: 16px;
+}
+
+.main_box{
+    max-width: 337px;
+    box-shadow: 10px 10px hsl(0, 0%, 7%) ;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(0, 0%, 100%);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 21px;
+    padding:20px;
+    margin: 10px;
+    width:fit-content;
+    img{
+        border-radius: 13px;
+        max-width: 100%;
+    }
+    height: fit-content;
+    
+}
+
+.learning{
+    color: hsl(0, 0%, 7%);
+
+    padding: 10px;
+    margin: 10px;
+    margin-left: 0;
+    font-weight:800;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 8px;
+    width: fit-content;
+}
+
+div div p{
+    margin: 10px;
+    margin-left: 0;
+    color: hsl(0, 0%, 7%);
+
+}
+
+h2{
+    margin: 10px;
+    margin-left: 0;
+    color: hsl(0, 0%, 7%);
+}
+
+h2:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.text{
+    margin: 10px;
+    margin-left: 0;
+    right:0;
+    color: hsl(0, 0%, 50%);
+    line-height: 1.5;
+}
+
+.container{
+    max-height:35px;
+    margin: 20px;
+    margin-left: 0;
+    display: flex;
+    img{
+        max-height: 40px;
+    }
+    p{
+        font-weight: 800;
+        padding-left: 10px;
+    } 
+}
+
+@media only screen and (max-width: 703px) {
+    .main_box {
+        width: 80%;
+        padding: 10px; /* Adjust padding as needed */
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%
+        min-height:100%;
+    }
+
+    .main_box img {
+        max-width: 100%; /* Ensure images scale within the container */
+        max-height: 90%;
+    }
+}
